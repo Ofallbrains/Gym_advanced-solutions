@@ -332,6 +332,10 @@ The most similar command is
 
 ```
 
+## 6. Creating a Branch from a Commit:
+``` bash
+
+
 
 
 
