@@ -146,6 +146,11 @@ Successfully rebased and updated refs/heads/main.
 
 ## 7. Reordering Commits:
 ```bash
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git rebase -i --root
+Successfully rebased and updated refs/heads/main.
+```
+
+## 8. Cherry-Picking Commits:
 
 
 
