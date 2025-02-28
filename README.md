@@ -119,6 +119,34 @@ f678ce1 chore: Combined multiple commits into one
 
 ## 5 Advanced Squashing:
 ``` bash
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git rebase -i HEAD~2
+[detached HEAD 8552d6d] Create Third and Fourth File
+ Date: Fri Feb 28 14:18:08 2025 +0200
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test3.md
+ create mode 100644 test4.md
+Successfully rebased and updated refs/heads/main.
+```
+
+## 6 Dropping a Commit:
+``` bash
+gymihumure@Ihumures-iMac Git_Advanced-exercises % touch unwanted.txt
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git add unwanted.txt  && git commit -m "Unwanted commit"
+[main e9dc446] Unwanted commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 unwanted.txt
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git log --oneline
+e9dc446 (HEAD -> main) Unwanted commit
+8552d6d Create Third and Fourth File
+f678ce1 chore: Combined multiple commits into one
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git rebase -i HEAD~1
+Successfully rebased and updated refs/heads/main.
+
+```
+
+## 7. Reordering Commits:
+```bash
+
 
 
     
