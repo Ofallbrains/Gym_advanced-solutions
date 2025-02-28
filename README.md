@@ -1,6 +1,6 @@
 ## Part1
 
-## 1
+## 1 Missing File Fix:
 ``` bash
 gymihumure@Ihumures-iMac Git_Advanced-exercises % touch test{1..4}.md
 gymihumure@Ihumures-iMac Git_Advanced-exercises % git add test1.md && git commit -m "chore: Create initial file"
@@ -47,6 +47,23 @@ Date:   Fri Feb 28 13:17:16 2025 +0200
 ```
 
 
- ## 2
- 
+ ## 2 Editing Commit History:
+ ``` bash
+ gymihumure@Ihumures-iMac Git_Advanced-exercises % git rebase -i HEAD~2
+[detached HEAD 0329982] chore: Create second  file
+ Date: Fri Feb 28 13:17:16 2025 +0200
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test2.md
+Successfully rebased and updated refs/heads/main.
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git log --oneline
+cb9da58 (HEAD -> main) chore: Create third and fourth files
+0329982 chore: Create second  file
+ac679ff chore: Create initial file
+
+```
+
+## 3 Keeping History Tidy - Squashing Commits:
+``` bash
+
+
     
