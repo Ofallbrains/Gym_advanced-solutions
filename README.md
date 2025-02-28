@@ -184,6 +184,29 @@ gymihumure@Ihumures-iMac Git_Advanced-exercises % git cherry-pick bcb01ac
 ## 10 Understanding Reflogs (Bonus):
 
 
+## PART 2
+
+## 1.Feature Branch Creation:
+``` bash
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git checkout -b ft/new-feature
+Switched to a new branch 'ft/new-feature'
+```
+
+## 2.Working on the Feature Branch:
+``` bash
+gymihumure@Ihumures-iMac Git_Advanced-exercises % echo "Another new feature" > feature.txt
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git add feature.txt && git commit -m "Implemented core functionality for new feautre"
+[ft/new-feature da0626f] Implemented core functionality for new feautre
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature.txt
+
+ ```
+
+ ## 3. Switching Back and Making More Changes:
+ ``` bash
+ 
+
+
 
 
     
