@@ -204,7 +204,133 @@ gymihumure@Ihumures-iMac Git_Advanced-exercises % git add feature.txt && git com
 
  ## 3. Switching Back and Making More Changes:
  ``` bash
- 
+ gymihumure@Ihumures-iMac Git_Advanced-exercises % git checkout main
+Switched to branch 'main'
+gymihumure@Ihumures-iMac Git_Advanced-exercises % echo "This is a readme file showing my contents" > readme.txt
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git add readme.txt && git commit -m "Updated project readme"
+[main 0594de1] Updated project readme
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.txt
+ ```
+
+ ## 4. Local vs. Remote Branches and Branch Deletion:
+ ``` bash
+ gymihumure@Ihumures-iMac Git_Advanced-exercises % git checkout main
+Switched to branch 'main'
+gymihumure@Ihumures-iMac Git_Advanced-exercises % echo "This is a readme file showing my contents" > readme.txt
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git add readme.txt && git commit -m "Updated project readme"
+[main 0594de1] Updated project readme
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.txt
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git status
+On branch main
+nothing to commit, working tree clean
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git checkout ft/new-feature
+Switched to branch 'ft/new-feature'
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git push origin ft/new-feature
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git remote -v
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git push origin ft/new-feature
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git remote add origin https://github.com/Ofallbrains/Git_Advanced-exercises.git
+
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git remove -v
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git remote -v                 
+origin  https://github.com/Ofallbrains/Git_Advanced-exercises.git (fetch)
+origin  https://github.com/Ofallbrains/Git_Advanced-exercises.git (push)
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git push origin ft/new-feature
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (11/11), 914 bytes | 914.00 KiB/s, done.
+Total 11 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/Ofallbrains/Git_Advanced-exercises.git
+ * [new branch]      ft/new-feature -> ft/new-feature
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git checkout main
+Switched to branch 'main'
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git pull origin main
+fatal: couldn't find remote ref main
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git remote show origin
+
+* remote origin
+  Fetch URL: https://github.com/Ofallbrains/Git_Advanced-exercises.git
+  Push  URL: https://github.com/Ofallbrains/Git_Advanced-exercises.git
+  HEAD branch: ft/new-feature
+  Remote branch:
+    ft/new-feature tracked
+  Local ref configured for 'git push':
+    ft/new-feature pushes to ft/new-feature (up to date)
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git branch -r
+  origin/ft/new-feature
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git checkout -b main 
+fatal: a branch named 'main' already exists
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git push -u origin main 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 318 bytes | 318.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'main' on GitHub by visiting:
+remote:      https://github.com/Ofallbrains/Git_Advanced-exercises/pull/new/main
+remote: 
+To https://github.com/Ofallbrains/Git_Advanced-exercises.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git remote show origin
+* remote origin
+  Fetch URL: https://github.com/Ofallbrains/Git_Advanced-exercises.git
+  Push  URL: https://github.com/Ofallbrains/Git_Advanced-exercises.git
+  HEAD branch: ft/new-feature
+  Remote branches:
+    ft/new-feature tracked
+    main           tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local refs configured for 'git push':
+    ft/new-feature pushes to ft/new-feature (up to date)
+    main           pushes to main           (up to date)
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git merge ft/new-feature
+Merge made by the 'ort' strategy.
+ feature.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature.txt
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 302 bytes | 302.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Ofallbrains/Git_Advanced-exercises.git
+   0594de1..a688555  main -> main
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git branch -d ft/new-feature
+
+Deleted branch ft/new-feature (was da0626f).
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git brainch -r
+git: 'brainch' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+```
 
 
 
