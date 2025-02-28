@@ -43,6 +43,10 @@ Author: Ofallbrains <ofallbrains@gmail.com>
 Date:   Fri Feb 28 13:17:16 2025 +0200
 
     chore: Create initial file
+    gymihumure@Ihumures-iMac Git_Advanced-exercises % git add test4.md && git commit -m "Created fourth file"
+[main c5af508] Created fourth file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test4.md
 
 ```
 
