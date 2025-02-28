@@ -173,7 +173,16 @@ gymihumure@Ihumures-iMac Git_Advanced-exercises % git cherry-pick bcb01ac
  ```
  ## 9. Visualizing Commit History (Bonus):
  ``` bash
- 
+ gymihumure@Ihumures-iMac Git_Advanced-exercises % git log --graph --oneline --decorate --all
+* 01d893e (HEAD -> main) Implemented test 5
+| * bcb01ac (ft/branch) Implemented test 5
+|/  
+* 8552d6d Create Third and Fourth File
+* f678ce1 chore: Combined multiple commits into one
+
+```
+## 10 Understanding Reflogs (Bonus):
+
 
 
 
