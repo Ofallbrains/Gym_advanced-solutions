@@ -334,6 +334,22 @@ The most similar command is
 
 ## 6. Creating a Branch from a Commit:
 ``` bash
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git branch
+  ft/branch
+* main
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git log --oneline           
+a688555 (HEAD -> main, origin/main) Merge branch 'ft/new-feature'
+0594de1 Updated project readme
+da0626f (origin/ft/new-feature) Implemented core functionality for new feautre
+01d893e Implemented test 5
+8552d6d Create Third and Fourth File
+f678ce1 chore: Combined multiple commits into one
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git checkout -b ft/new-branch-from-commit da0626f
+Switched to a new branch 'ft/new-branch-from-commit'
+
+```
+
+## 7.Branch Merging:
 
 
 
