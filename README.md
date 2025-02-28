@@ -151,6 +151,29 @@ Successfully rebased and updated refs/heads/main.
 ```
 
 ## 8. Cherry-Picking Commits:
+``` bash
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git checkout -b ft/branch
+Switched to a new branch 'ft/branch'
+gymihumure@Ihumures-iMac Git_Advanced-exercises % echo "This is test 5" > test5.md
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git add test5.md && git commit -m "Implemented test 5" 
+[ft/branch bcb01ac] Implemented test 5
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test5.md
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git log --oneline
+bcb01ac (HEAD -> ft/branch) Implemented test 5
+8552d6d (main) Create Third and Fourth File
+f678ce1 chore: Combined multiple commits into one
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git checkout main
+Switched to branch 'main'
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git cherry-pick bcb01ac
+[main 01d893e] Implemented test 5
+ Date: Fri Feb 28 14:35:10 2025 +0200
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test5.md
+ ```
+ ## 9. Visualizing Commit History (Bonus):
+ ``` bash
+ 
 
 
 
