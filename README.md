@@ -523,7 +523,19 @@ To https://github.com/Ofallbrains/Git_Advanced-exercises.git
 ## 10 Pulling changes from the remote repositories
 
 ``` bash
+PS E:\Moi\Gym_advanced-solutions> git add .
+PS E:\Moi\Gym_advanced-solutions> git commit -m "Pulling changes from remote"
+[main 71a465e] Pulling changes from remote
+ 1 file changed, 26 insertions(+)
+PS E:\Moi\Gym_advanced-solutions> git pull origin main
+From https://github.com/Ofallbrains/Gym_advanced-solutions
+ * branch            main       -> FETCH_HEAD
+Auto-merging README.md
+Merge made by the 'ort' strategy.
+ README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
 
+```
 
 
 
