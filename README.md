@@ -416,8 +416,23 @@ gymihumure@Ihumures-iMac Git_Advanced-exercises %
 
 ```
 
+## PART 3
 
+## 1. Stashing changes
 
+``` bash
+PS E:\Moi\Git_Advanced-exercises> git stash  
+Saved working directory and index state WIP on main: 545651f Merge pull request #2 from Ofallbrains/ft/new-feature
+PS E:\Moi\Git_Advanced-exercises> git stash list
+stash@{0}: WIP on main: 545651f Merge pull request #2 from Ofallbrains/ft/new-feature
+PS E:\Moi\Git_Advanced-exercises> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean        
+PS E:\Moi\Git_Advanced-exercises> 
+
+```
 
 
 
