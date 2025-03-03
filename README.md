@@ -499,6 +499,32 @@ Deleted tag 'v1.0' (was 09273a2)
 
 ```
 
+## 9. Pushing local changes to remote repositories
+
+``` bash
+PS E:\Moi\Git_Advanced-exercises> git add . 
+PS E:\Moi\Git_Advanced-exercises> git commit -m "Created gitignore file"
+[main 61ed2fe] Created gitignore file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore
+PS E:\Moi\Git_Advanced-exercises> git push 
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.   
+Delta compression using up to 4 threads 
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (12/12), 1.10 KiB | 140.00 KiB/s, done.
+Total 12 (delta 5), reused 0 (delta 0), pack-reused 0        
+remote: Resolving deltas: 100% (5/5), completed with 1 local object.
+To https://github.com/Ofallbrains/Git_Advanced-exercises.git
+   545651f..61ed2fe  main -> main
+
+```
+
+## 10 Pulling changes from the remote repositories
+
+``` bash
+
+
 
 
     
