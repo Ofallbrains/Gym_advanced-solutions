@@ -378,7 +378,43 @@ Switched to branch 'ft/new-branch-from-commit'
 gymihumure@Ihumures-iMac Git_Advanced-exercises % git branch -m ft/new-branch-from-commit ft/improved-branch-name
 
 ```
+## 10 Checking Out Detached HEAD:
+``` bash
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git log --oneline
+545651f (HEAD -> ft/improved-branch-name, origin/main, main) Merge pull request #2 from Ofallbrains/ft/new-feature
+691f9cb Merge pull request #1 from Ofallbrains/main
+a688555 Merge branch 'ft/new-feature'
+0594de1 Updated project readme
+da0626f (origin/ft/new-feature, origin/ft/new-branch-from-commit) Implemented core functionality for new feautre
+01d893e Implemented test 5
+8552d6d Create Third and Fourth File
+f678ce1 chore: Combined multiple commits into one
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git checkout 691f9cb
+Note: switching to '691f9cb'.
 
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 691f9cb Merge pull request #1 from Ofallbrains/main
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git checkout main
+Previous HEAD position was 691f9cb Merge pull request #1 from Ofallbrains/main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+gymihumure@Ihumures-iMac Git_Advanced-exercises % 
+
+```
 
 
 
