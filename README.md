@@ -451,6 +451,36 @@ Dropped refs/stash@{0} (8e367a4a2aa8082e4f9ff9835cdd9bc6637d56ec)
 
 ```
 
+## 3.Branch Merging conflicts:
+
+``` bash
+Switched to a new branch 'conflict-branch'
+PS E:\Moi\Git_Advanced-exercises> git add . 
+[conflict-branch 37ac637] modified feature file by adding
+ 1 file changed, 2 insertions(+)
+PS E:\Moi\Git_Advanced-exercises> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS E:\Moi\Git_Advanced-exercises> git branch   
+  conflict-branch
+* main
+PS E:\Moi\Git_Advanced-exercises> git checkout conflict-branch
+Switched to branch 'conflict-branch'
+PS E:\Moi\Git_Advanced-exercises> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS E:\Moi\Git_Advanced-exercises> git add .
+PS E:\Moi\Git_Advanced-exercises> git commit -m "Modified feature file by adding another test"
+[main bc3c228] Modified feature file by adding another test
+ 1 file changed, 1 insertion(+)
+PS E:\Moi\Git_Advanced-exercises> git merge conflict-branch
+Auto-merging feature.txt
+CONFLICT (content): Merge conflict in feature.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+```
+
+
 
 
 
