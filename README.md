@@ -488,7 +488,14 @@ PS E:\Moi\Git_Advanced-exercises> echo "/tmp" > .gitignore
 
 ```
 
-## 7. 
+## 7. Working with tags
+
+``` bash
+PS E:\Moi\Git_Advanced-exercises> git tag v1.0
+PS E:\Moi\Git_Advanced-exercises> git tag
+v1.0
+
+```
 
 
 
