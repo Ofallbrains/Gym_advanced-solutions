@@ -371,6 +371,16 @@ f678ce1 chore: Combined multiple commits into one
 
 ```
 
+## 9. Renaming branches:
+``` bash 
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git checkout ft/new-branch-from-commit
+Switched to branch 'ft/new-branch-from-commit'
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git branch -m ft/new-branch-from-commit ft/improved-branch-name
+
+```
+
+
+
 
 
 
