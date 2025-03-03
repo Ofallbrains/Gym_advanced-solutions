@@ -488,12 +488,14 @@ PS E:\Moi\Git_Advanced-exercises> echo "/tmp" > .gitignore
 
 ```
 
-## 7. Working with tags
+## 7. Working with tags and 8. deleting or removing tags
 
 ``` bash
 PS E:\Moi\Git_Advanced-exercises> git tag v1.0
 PS E:\Moi\Git_Advanced-exercises> git tag
 v1.0
+PS E:\Moi\Git_Advanced-exercises> git tag -d v1.0 
+Deleted tag 'v1.0' (was 09273a2)
 
 ```
 
