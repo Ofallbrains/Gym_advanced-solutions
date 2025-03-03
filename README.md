@@ -350,6 +350,28 @@ Switched to a new branch 'ft/new-branch-from-commit'
 ```
 
 ## 7.Branch Merging:
+## 8. Branch rebasing:
+``` bash
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git checkout ft/new-branch-from-commit
+Switched to branch 'ft/new-branch-from-commit'
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git rebase main
+Successfully rebased and updated refs/heads/ft/new-branch-from-commit.
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+gymihumure@Ihumures-iMac Git_Advanced-exercises % git log --oneline
+545651f (HEAD -> main, origin/main, ft/new-branch-from-commit) Merge pull request #2 from Ofallbrains/ft/new-feature
+691f9cb Merge pull request #1 from Ofallbrains/main
+a688555 Merge branch 'ft/new-feature'
+0594de1 Updated project readme
+da0626f (origin/ft/new-feature, origin/ft/new-branch-from-commit) Implemented core functionality for new feautre
+01d893e Implemented test 5
+8552d6d Create Third and Fourth File
+f678ce1 chore: Combined multiple commits into one
+
+```
+
+
 
 
 
