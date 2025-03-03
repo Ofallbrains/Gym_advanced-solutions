@@ -480,8 +480,15 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 ```
 
+## 6. Ignoring files/directories
 
+``` bash
 
+PS E:\Moi\Git_Advanced-exercises> echo "/tmp" > .gitignore
+
+```
+
+## 7. 
 
 
 
